@@ -1,0 +1,4 @@
+.vscode/
+task/__pycache__/
+to_do/__pycache__/
+to_do/migrations/__pycache__/

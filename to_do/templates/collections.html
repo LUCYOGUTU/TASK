@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static 'styles.css' %}" />
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <h2>Collections</h2>
+
+    <div class="collections">
+        <div class="collection-elements">
+            <!-- logo for the specific collection -->
+            <h4>Study</h4>
+            <p>Some text</p>
+        </div>
+        <div class="collection-elements">
+            <!-- logo for the specific collection -->
+            <h4>Home</h4>
+            <p>Some text</p>
+        </div>
+        <div class="collection-elements">
+            <!-- logo for the specific collection -->
+            <h4>Work</h4>
+            <p>Some text</p>
+        </div>
+        <div class="collection-elements">
+            <!-- logo for the specific collection -->
+            <h4>Hospital</h4>
+            <p>Some text</p>
+        </div>
+        <div class="collection-elements">
+            <!-- logo for the specific collection -->
+            <h4>Uncategorized</h4>
+            <p>Some text</p>
+        </div>
+    </div>
+
+</div>
+
+
+{% endblock %}
