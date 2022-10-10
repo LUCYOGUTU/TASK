@@ -1,10 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block css_files %}
-<link rel="stylesheet" href="{% static 'styles.css' %}" />
-{% endblock %}
-
 {% block content %}
 
 
@@ -12,28 +8,28 @@
     <h2>Collections</h2>
 
     <div class="collections">
-        <div class="collection-elements">
-            <!-- logo for the specific collection -->
+        <div class="collection-elements" onclick="navigate()">
+            <img src="{% static 'images/study_avatar.jpeg' %}" alt="">
             <h4>Study</h4>
             <p>Some text</p>
         </div>
         <div class="collection-elements">
-            <!-- logo for the specific collection -->
+            <img src="{% static 'images/home_avatar.jpg' %}" alt="">
             <h4>Home</h4>
             <p>Some text</p>
         </div>
         <div class="collection-elements">
-            <!-- logo for the specific collection -->
+            <img src="{% static 'images/work_avatar.webp' %}" alt="">
             <h4>Work</h4>
             <p>Some text</p>
         </div>
         <div class="collection-elements">
-            <!-- logo for the specific collection -->
+            <img src="{% static 'images/hospital_avatar.jpg' %}" alt="">
             <h4>Hospital</h4>
             <p>Some text</p>
         </div>
         <div class="collection-elements">
-            <!-- logo for the specific collection -->
+            <img src="{% static 'images/study_avatar.jpeg' %}" alt="">
             <h4>Uncategorized</h4>
             <p>Some text</p>
         </div>
@@ -41,5 +37,8 @@
 
 </div>
 
+<!-- supposed to help with navigation to the next page
+we will first set up the db to take in the types of collecions then we set routes from there using pk -->
+<script src="{% static 'js/script.js' %}"></script>
 
 {% endblock %}

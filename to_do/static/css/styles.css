@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* nav styling */
+header{
+    padding: 20px 5%;
+    background-color: #001a2b;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-right-radius: 10px;
+}
+
+header .main-components{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    gap: 2em;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li:first-child span:last-child{
+    font-weight: 900;
+    padding: 10px;
+    font-size: x-large;
+}
+
+nav ul li img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.tooltip{
+    position: relative;
+    cursor: pointer;
+    padding: 7px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.tooltiptext{
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translateX(50%);
+    background-color: #001a2b;
+    color: white;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 7px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.tooltiptext::before{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    border: 15px solid;
+    border-color: rgba(255, 255, 255, 0) rgba(255, 255, 255, 0) rgba(255, 255, 255, 1) rgba(255, 255, 255, 0);
+}
+
+.tooltip:hover .tooltiptext{
+    bottom: -130%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.container{
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h2{
+    padding-bottom: 20px;
+    color: #001a2b;
+}
+
+.collections{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.collection-elements{
+    width: 250px;
+    height: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #001a2b;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #001a2b;
+}
+
+.collection-elements img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.collection-elements h4, p{
+    color: white;
+    padding: 10px;
+}
+
+.side_menu{
+    position: fixed;
+    top: 40;
+    left: 0;
+    background-color: #001a2b;
+    padding: 30px;
+    height: 100vh;
+}
+
+.side_menu h3{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.side_menu ul li{
+    list-style: none;
+    color: white;
+    padding: 20px;
+    font-size: larger;
+}
+
+.container-detail{
+    position: absolute;
+    width: 60%;
+    margin: 20px;
+    top: 100px;
+    right: 200px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.container-detail h3{
+    padding: 10px;
+}
+
+hr{
+    margin-bottom: 10px;
+    color: #001a2b;
+}
+
+.container-detail .addtask{
+    padding: 20px;
+}
+
+.container-detail .addtask span{
+    padding: 10px;
+}
+
+.container-detail .addtask span:first-child{
+    background-color: #001a2b;
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+
+.container-detail p{
+    padding-right: 20px;
+    color: #001a2b;
+}
+
+.container-detail .tasks{
+    margin: 10px;
+    padding: 10px;
+    background: #ecf4fb;
+    border-radius: 10px;
+}
+
+.container-detail .tasks h4{
+    padding: 10px;
+}
+
+.container-detail .tasks p{
+    color: black;
+}

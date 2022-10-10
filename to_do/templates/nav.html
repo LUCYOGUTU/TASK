@@ -1,0 +1,30 @@
+<header>
+    <div class="main-components">
+        <h3><a href="#">Dashboard</a></h3>
+        <h3><a href="#">Collections</a></h3>
+    </div>
+
+    <nav>
+        <ul>
+            <li>
+                <div class="tooltip">
+                    <span class="tooltiptext">Add a new Task</span>
+                    <span><a href="#">+</a></span>
+                </div>
+            </li>
+            <li>
+                <div class="tooltip">
+                    <span class="tooltiptext">Search for task</span>
+                    <span><a href="#">Search</a></span>
+                </div>
+            </li>
+            {% load static %}
+            <li>
+                <div class="tooltip">
+                    <span class="tooltiptext">Your profile</span>
+                    <span><a href="#"><img src="{% static 'images/profile avatar.png' %}" alt="profile" /></a></span>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
